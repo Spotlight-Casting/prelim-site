@@ -8,8 +8,11 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        custom: ["Horizon", "sans-serif"],
+      },
       colors: {
-        background: "var(--background)",
+        background: "#232324",
         foreground: "var(--foreground)",
       },
     },
