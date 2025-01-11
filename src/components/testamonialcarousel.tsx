@@ -1,6 +1,5 @@
 "use client"
 import { useState } from 'react';
-import { ChevronLeft, ChevronRight } from 'react-feather';
 
 const images = [
     "/tarousel/test1.png",
@@ -34,20 +33,6 @@ export default function Tarousel() {
                 alt="side of film reel for carousel" 
                 className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[1000px]"
             />
-
-            <button 
-                onClick={goToPrevious} 
-                className="absolute left-28 top-1/2 -translate-y-1/2 z-20 hover:bg-gray-100/10 rounded-full p-2"
-            >
-                <ChevronLeft size={32} />
-            </button>
-
-            <button 
-                onClick={goToNext} 
-                className="absolute right-28 top-1/2 -translate-y-1/2 z-20 hover:bg-gray-100/10 rounded-full p-2"
-            >
-                <ChevronRight size={32} />
-            </button>
 
             <div className="flex justify-center mt-4">
                 {images.map((_, index) => (

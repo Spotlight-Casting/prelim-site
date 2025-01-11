@@ -1,7 +1,7 @@
 import Carousel from "../components/carousel";
 import Tarousel from "../components/testamonialcarousel"; // I called the testamonial carousel, Tarousel
 import SignUpPopup from '../components/popup';
-
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -35,38 +35,44 @@ export default function Home() {
   <h3 className="font-bold text-xl mr-4">
     Trusted by:
   </h3>
-  <img 
+  <Image 
     src="/home/trusted6.png"
     alt="logo"
-    className="w-auto h-16"
+    width={100}
+    height={100}
   />
-  <img 
+  <Image 
     src="/home/trusted5.png"
     alt="logo"
-    className="w-auto h-16"
+    width={200}
+    height={100}
   />
-  <img 
+  <Image 
     src="/home/trusted4.png"
     alt="logo"
-    className="w-auto h-16"
+    width={130}
+    height={100}
   />
-  <img 
+  <Image 
     src="/home/trusted3.png"
     alt="logo"
-    className="w-auto h-16"
+    width={100}
+    height={100}
   />
-  <img 
+  <Image 
     src="/home/trusted2.png"
     alt="logo"
-    className="w-auto h-16"
+    width={100}
+    height={100}
   />
-  <img 
+  <Image 
     src="/home/trusted1.png"
     alt="logo"
-    className="w-auto h-16"
+    width={100}
+    height={100}
   />
 </div>
-      <img src="/home/dots.png" alt="assortment of dots" className="absolute right-[200px] top-[500px] flex w-[200px] h-300 z-0"/>
+      <Image src="/home/dots.png" alt="assortment of dots" className="absolute right-[200px] top-[500px] flex z-0" width={200} height={300}/>
       </div>
     </div>
     <div className="flex mx-36 mt-5 relative z-10" >
@@ -84,16 +90,17 @@ export default function Home() {
         </p>
       </div> 
       <div className="pl-40 mt-3">
-
         <Carousel />
           <p className="flex justify-center text-sm text-center px-20 mt-5">Student actors on set for the film “To Labour, with Love: premiering in February 2025.</p>
       </div>
     </div>
 
-    <img 
+    <Image 
       src="/home/stars.png"
       alt="two stars"
       className="absolute left-32 mt-5"
+      width={150}
+      height={80}
     />
 
     <div className="mx-20 relative z-10" >
@@ -109,6 +116,8 @@ export default function Home() {
       src="/home/stars.png"
       alt="two stars"
       className="absolute right-32 mt-12"
+      width={150}
+      height={80}
     />
     
     <div className="mx-52 mt-24 my-4 relative z-10" >
@@ -125,7 +134,12 @@ export default function Home() {
       With exclusive access to film festival networks, Spotlight gives your projects a competitive edge, increasing their visibility and impact within the industry.
       </p>
     </div>
-    <img src="/home/dots.png" alt="assortment of dots" className="absolute mt-6 right-[200px] flex w-[200px] h-300 z-0"/>
+    <Image 
+      src="/home/dots.png" 
+      alt="assortment of dots" 
+      className="absolute mt-6 right-[200px] flex w-[200px] h-300 z-0"
+      width={200} height={300}
+    />
 
     <div className=" mx-40 mt-32 relative z-10" >
       <h2 className="font-bold text-5xl">Testimonials</h2>
@@ -133,10 +147,10 @@ export default function Home() {
     </div>
     <div className="flex items-center justify-evenly mt-32 mb-10">
   <div className="flex mt-10items-center space-x-4">
-    <img 
+    <Image 
       src="/home/Instagram.png" 
       alt="Instagram Logo" 
-      className="w-8 h-8"
+      width={30} height={20}
     />
     <h2 className="text-xl">@spotlight.info</h2>
   </div>
@@ -144,7 +158,7 @@ export default function Home() {
     <img 
       src="/home/gmail.png" 
       alt="Gmail Logo" 
-      className="w-8 h-8"
+      width={30} height={20}
     />
     <h2 className="text-xl">Gmail: spotlightcasting.ca@gmail.com</h2>
   </div>
@@ -152,7 +166,7 @@ export default function Home() {
     <img 
       src="/home/phone.png" 
       alt="Phone Logo" 
-      className="w-8 h-8"
+      width={30} height={20}
     />
     <h2 className="text-xl">Phone Number: 647-855-1118</h2>
   </div>
