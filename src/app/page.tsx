@@ -12,8 +12,8 @@ export default function Home() {
       <Image 
         src="/home/logo.svg" 
         alt="Logo"
-        className="w-16 h-16 justify-start" 
-        width={100}
+        className="justify-start mt-6" 
+        width={70}
         height={100}
       />
       <div className="flex justify-end items-center w-full">
@@ -118,7 +118,7 @@ export default function Home() {
       </h3>
     </div>
 
-    <img 
+    <Image 
       src="/home/stars.png"
       alt="two stars"
       className="absolute right-32 mt-12"
@@ -161,7 +161,7 @@ export default function Home() {
     <h2 className="text-xl">@spotlight.info</h2>
   </div>
   <div className="flex items-center space-x-4">
-    <img 
+    <Image 
       src="/home/gmail.png" 
       alt="Gmail Logo" 
       width={30} height={20}
@@ -169,7 +169,7 @@ export default function Home() {
     <h2 className="text-xl">Gmail: spotlightcasting.ca@gmail.com</h2>
   </div>
   <div className="flex items-center space-x-4">
-    <img 
+    <Image 
       src="/home/phone.png" 
       alt="Phone Logo" 
       width={30} height={20}
