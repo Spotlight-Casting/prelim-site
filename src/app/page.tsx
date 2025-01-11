@@ -1,4 +1,7 @@
 import Carousel from "../components/carousel";
+import Tarousel from "../components/testamonialcarousel"; // I called the testamonial carousel, Tarousel
+import SignUpPopup from '../components/popup';
+
 
 export default function Home() {
   return (
@@ -6,7 +9,7 @@ export default function Home() {
       className="bg-black"
     >
       <header className="bg-black flex px-10 w-full">
-      <img src="/logo.svg" alt="Logo" className="w-16 h-16 justify-start" />
+      <img src="/home/logo.svg" alt="Logo" className="w-16 h-16 justify-start" />
       <div className="flex justify-end items-center w-full">
       <h2 className="font-custom mx-4 text-xl">
         Home
@@ -24,95 +27,140 @@ export default function Home() {
         Your stage. Your camera. Your portfolio.
       </h3>
       <h1 className="font-custom text-7xl mt-1 px-10">
-      Connecting student actors to filmmakers
+      HELPING FILMAKERS AND ACTORS BUILD EXPERIENCE
       </h1>
-      <div className="flex justify-center mt-4">
-      <h3 className="font-bold text-xl">
-        Trusted by:
-      </h3>
-      <h3 className="text-xl">
-        KINGSTON CANADIAN FILM FESTIVAL   DDQIC   LOI   INQUBATE
-      </h3>
-      </div>
-      <button className="bg-yellow-400 p-4 px-16 rounded-full hover:bg-yellow-500 text-black mt-4 font-bold">
-        Sign Up
-      </button>
-      <img src="/dots.png" alt="assortment of dots" className="absolute right-[200px] flex w-[200px] h-300 z-0"/>
-  
-      <img src="/pngegg 1.png" alt="video roll" className="absolute -z-20 w-full right-0 top-[900px]"/>
+      <SignUpPopup />
+
+      <div className="flex flex-wrap justify-center items-center mt-10 space-x-4">
+  <h3 className="font-bold text-xl mr-4">
+    Trusted by:
+  </h3>
+  <img 
+    src="/home/trusted6.png"
+    alt="logo"
+    className="w-auto h-16"
+  />
+  <img 
+    src="/home/trusted5.png"
+    alt="logo"
+    className="w-auto h-16"
+  />
+  <img 
+    src="/home/trusted4.png"
+    alt="logo"
+    className="w-auto h-16"
+  />
+  <img 
+    src="/home/trusted3.png"
+    alt="logo"
+    className="w-auto h-16"
+  />
+  <img 
+    src="/home/trusted2.png"
+    alt="logo"
+    className="w-auto h-16"
+  />
+  <img 
+    src="/home/trusted1.png"
+    alt="logo"
+    className="w-auto h-16"
+  />
+</div>
+      <img src="/home/dots.png" alt="assortment of dots" className="absolute right-[200px] top-[500px] flex w-[200px] h-300 z-0"/>
       </div>
     </div>
     <div className="flex mx-36 mt-5 relative z-10" >
-      <div className="" style={{ width: "50%" }}>
-        <h2 className="w-[600] text-6xl font-custom">
+      <div className="w-1/2">
+        <h2 className="w-[600] text-5xl font-custom">
           Connect.
           Collaborate.
           Create.
         </h2>
-        <p className="mt-10">
-          Spotlight is a plat
+        <p className="mt-10 ">
+          At Spotlight, we connect student actors and filmmakers, empowering them to collaborate on creative projects that build their portfolios and kickstart their careers in the entertainment industry. 
         </p>
         <p className="mt-5">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consectetur aliquam lobortis. Cras nec pellentesque enim. Cras tempus porta nisl sit amet aliquet. Fusce fringilla dictum quam, vitae bibendum dui pulvinar id. Etiam ullamcorper blandit dui et venenatis.
-        </p>
-        <p className="mt-5">
-          Donec eget felis odio. Praesent justo felis, viverra sed enim at, commodo aliquam nunc. Mauris sagittis, ligula sed eleifend consectetur, justo eros scelerisque justo, at lacinia metus ligula vel ante. Donec sed sem tristique, condimentum nisl ac, interdum nisi. Proin consectetur nisl elit, eget interdum urna rutrum non. In ut pellentesque sapien, quis fermentum turpis. In vel mauris ante. Curabitur aliquam, nunc vitae fringilla vestibulum, neque turpis lobortis metus, nec rhoncus lorem sapien vel dolor.
+          Our platform pairs aspiring talent with like-minded creators, providing opportunities to participate in acting events and feature in student films. With a mission to bridge the gap between education and real-world experience, Spotlight fosters a community where passion meets opportunity, helping students showcase their skills, gain valuable experience, and shine in their respective fields.
         </p>
       </div> 
-      <div className="pl-40">
+      <div className="pl-40 mt-3">
+
         <Carousel />
-          <h5 className="font-bold text-xl flex justify-center mt-6"> NAME SURNAME.</h5>
-          <p className="flex justify-center text-center px-20 mt-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p className="flex justify-center text-sm text-center px-20 mt-5">Student actors on set for the film “To Labour, with Love: premiering in February 2025.</p>
       </div>
     </div>
+
+    <img 
+      src="/home/stars.png"
+      alt="two stars"
+      className="absolute left-32 mt-5"
+    />
+
     <div className="mx-20 relative z-10" >
-      <h2 className="flex mt-20 text-7xl font-custom justify-center">
-        3 FILMS, 15 STUDENTS
+      <h2 className="flex mt-36 text-4xl font-custom text-yellow-400 justify-center text-center">
+        4 FILMS, 15 STUDENTS, 60 days in operation
       </h2>  
-      <h3 className="flex justify-center font-bold text-xl mt-5">
+      <h3 className="flex justify-center font-bold text-xl mt-5 text-center">
         connecting aspiring actors and filmakers to create, collaborate, and elevate their careers.
       </h3>
     </div>
+
+    <img 
+      src="/home/stars.png"
+      alt="two stars"
+      className="absolute right-32 mt-12"
+    />
     
-    <div className="mx-52 mt-20 my-4 relative z-10" >
-      <h3 className="text-3xl font-bold">Why Work With Us.</h3>
-      <p className="mt-4">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consectetur aliquam lobortis. Cras nec pellentesque enim. Cras tempus porta nisl sit amet aliquet. Fusce fringilla dictum quam, vitae bibendum dui pulvinar id. Etiam ullamcorper blandit dui et venenatis.
+    <div className="mx-52 mt-24 my-4 relative z-10" >
+      <h3 className="text-4xl font-bold">Why Work With Us.</h3>
+      <h4 className="text-xl font-bold mt-4">For student actors:</h4>
+      <p className="">
+        Spotlight offers an unmatched opportunity to gain real-world acting experience and grow your portfolio.
+        By connecting you directly with student filmmakers, we ensure you’re part of projects that challenge your skills and allow your talent to shine. Plus, with our ongoing partnerships with renowned film festivals, your work has the potential to reach top industry professionals, opening doors to future opportunities and recognition.
       </p>
-      <p className="mt-4">
-        Donec eget felis odio. Praesent justo felis, viverra sed enim at, commodo aliquam nunc. Mauris sagittis, ligula sed eleifend consectetur, justo eros scelerisque justo, at lacinia metus ligula vel ante. Donec sed sem tristique, condimentum nisl ac, interdum nisi. Proin consectetur nisl elit, eget interdum urna rutrum non. In ut pellentesque sapien, quis fermentum turpis. In vel mauris ante. Curabitur aliquam, nunc vitae fringilla vestibulum, neque turpis lobortis metus, nec rhoncus lorem sapien vel dolor.
+      <h4 className="text-xl font-bold mt-4">For filmakers:</h4>
+      <p className="">
+      As a filmmaker, Spotlight helps you bring your vision to life by connecting you with passionate and talented student actors ready to collaborate on meaningful projects. 
+      Our platform streamlines the casting process, saving you time and effort while ensuring quality. 
+      With exclusive access to film festival networks, Spotlight gives your projects a competitive edge, increasing their visibility and impact within the industry.
       </p>
     </div>
-    <img src="/dots.png" alt="assortment of dots" className="absolute mt-6 right-[200px] flex w-[200px] h-300 z-0"/>
+    <img src="/home/dots.png" alt="assortment of dots" className="absolute mt-6 right-[200px] flex w-[200px] h-300 z-0"/>
 
     <div className=" mx-40 mt-32 relative z-10" >
       <h2 className="font-bold text-5xl">Testimonials</h2>
-      <div className="flex justify-center mt-10">
-        <img src="/carousel/carousel1.png" alt="carousel" className="w-[350px] h-[350px] "/>
-        <img src="/carousel/carousel2.png" alt="carousel" className="w-[350px] h-[350px] mx-3"/>
-        <img src="/carousel/carousel3.png" alt="carousel" className="w-[350px] h-[350px]"/>
-      </div>
+     <Tarousel/>
     </div>
+    <div className="flex items-center justify-evenly mt-32 mb-10">
+  <div className="flex mt-10items-center space-x-4">
+    <img 
+      src="/home/Instagram.png" 
+      alt="Instagram Logo" 
+      className="w-8 h-8"
+    />
+    <h2 className="text-xl">@spotlight.info</h2>
+  </div>
+  <div className="flex items-center space-x-4">
+    <img 
+      src="/home/gmail.png" 
+      alt="Gmail Logo" 
+      className="w-8 h-8"
+    />
+    <h2 className="text-xl">Gmail: spotlightcasting.ca@gmail.com</h2>
+  </div>
+  <div className="flex items-center space-x-4">
+    <img 
+      src="/home/phone.png" 
+      alt="Phone Logo" 
+      className="w-8 h-8"
+    />
+    <h2 className="text-xl">Phone Number: 647-855-1118</h2>
+  </div>
+  <button className="bg-yellow-400 p-4 px-16 rounded-full hover:bg-yellow-500 text-black font-bold">
+    Work with us!
+  </button>
+</div>
 
-    <div className="relative z-10 mx-[500px] mt-20 pb-10" >
-      <div className="flex text-3xl">
-        <h2 className="">Instagram: </h2>
-        <h2 className="pl-2">@spotlight.info</h2>
-      </div>
-      <div className="flex text-3xl">
-        <h2 className="">Gmail: </h2>
-        <h2 className="pl-2">spotlightcasting.ca@gmail.com</h2>
-      </div>
-      <div className="flex text-3xl">
-        <h2 className="">Phone Number: </h2>
-        <h2 className="pl-2">647-855-1118</h2>
-      </div>
-      <div className="flex justify-center">
-      <button className="bg-yellow-400 p-4 px-16 rounded-full hover:bg-yellow-500 text-black mt-4 font-bold">
-        Work with us!
-      </button>
-      </div>
-    </div>
     </main>
   );
 }

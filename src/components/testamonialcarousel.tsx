@@ -3,12 +3,12 @@ import { useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'react-feather';
 
 const images = [
-    "/carousel/carousel1.png",
-    "/carousel/carousel2.png",
-    "/carousel/carousel3.png",
+    "/tarousel/test1.png",
+    "/tarousel/test1.png",
+    "/tarousel/test1.png",
 ]
 
-export default function Carousel() {
+export default function Tarousel() {
     const [currentIndex, setCurrentIndex] = useState(0);
     
     const goToPrevious = () => {
@@ -20,20 +20,34 @@ export default function Carousel() {
     };
 
     return (
-        <div className="relative w-[450px]">
+        <div className="relative w-full mt-4">
             <div className="flex overflow-hidden justify-center">
                 <img 
                     src={images[currentIndex]} 
                     alt="carousel" 
-                    className="w-[350px] h-[300px] rounded-xl"
+                    className="w-[900px] h-[350px] rounded-xl"
                 />
             </div>
 
             <img 
-                src="/home/smallfilm.png" 
+                src="/home/bigfilm.png" 
                 alt="side of film reel for carousel" 
-                className="absolute w-full top-0 h-[300px] "
+                className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[1000px]"
             />
+
+            <button 
+                onClick={goToPrevious} 
+                className="absolute left-28 top-1/2 -translate-y-1/2 z-20 hover:bg-gray-100/10 rounded-full p-2"
+            >
+                <ChevronLeft size={32} />
+            </button>
+
+            <button 
+                onClick={goToNext} 
+                className="absolute right-28 top-1/2 -translate-y-1/2 z-20 hover:bg-gray-100/10 rounded-full p-2"
+            >
+                <ChevronRight size={32} />
+            </button>
 
             <div className="flex justify-center mt-4">
                 {images.map((_, index) => (
@@ -47,5 +61,5 @@ export default function Carousel() {
                 ))}
             </div>
         </div>
-            )
-} 
+    )
+}
