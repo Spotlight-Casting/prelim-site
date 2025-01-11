@@ -10,7 +10,7 @@ export default function Home() {
     >
       <header className="bg-black flex px-10 w-full">
       <Image 
-        src="/home/logo.svg" 
+        src="/home/logo.png" 
         alt="Logo"
         className="justify-start mt-6" 
         width={70}
@@ -97,7 +97,7 @@ export default function Home() {
       </div> 
       <div className="pl-40 mt-3">
         <Carousel />
-          <p className="flex justify-center text-sm text-center px-20 mt-5">Student actors on set for the film “To Labour, with Love: premiering in February 2025.</p>
+          <p className="flex justify-center text-sm text-center px-20 mt-5">Student actors that used Spotlight on set for the films set to premier in February 2025.</p>
       </div>
     </div>
 
