@@ -9,14 +9,6 @@ const images = [
 
 export default function Tarousel() {
     const [currentIndex, setCurrentIndex] = useState(0);
-    
-    const goToPrevious = () => {
-        setCurrentIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
-    };
-
-    const goToNext = () => {
-        setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
-    };
 
     return (
         <div className="relative w-full mt-4">

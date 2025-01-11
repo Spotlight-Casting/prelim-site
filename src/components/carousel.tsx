@@ -1,6 +1,5 @@
 "use client"
 import { useState } from 'react';
-import { ChevronLeft, ChevronRight } from 'react-feather';
 
 const images = [
     "/carousel/carousel1.png",
@@ -10,14 +9,6 @@ const images = [
 
 export default function Carousel() {
     const [currentIndex, setCurrentIndex] = useState(0);
-    
-    const goToPrevious = () => {
-        setCurrentIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
-    };
-
-    const goToNext = () => {
-        setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
-    };
 
     return (
         <div className="relative w-[450px]">
