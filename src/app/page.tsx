@@ -9,7 +9,13 @@ export default function Home() {
       className="bg-black"
     >
       <header className="bg-black flex px-10 w-full">
-      <img src="/home/logo.svg" alt="Logo" className="w-16 h-16 justify-start" />
+      <Image 
+        src="/home/logo.svg" 
+        alt="Logo"
+        className="w-16 h-16 justify-start" 
+        width={100}
+        height={100}
+      />
       <div className="flex justify-end items-center w-full">
       <h2 className="font-custom mx-4 text-xl">
         Home
