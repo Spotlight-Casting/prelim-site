@@ -10,7 +10,7 @@ export default function Home() {
     >
       <header className="bg-black flex px-10 w-full">
       <Image 
-        src="/home/logo.png" 
+        src="/home/LOGO.png" 
         alt="Logo"
         className="justify-start mt-6" 
         width={70}
